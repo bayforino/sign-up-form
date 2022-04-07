@@ -151,6 +151,7 @@ input {
 
 input:focus {
   outline-color: var(--main-green) !important;
+  box-shadow: 2px 2px 4px var(--box-shadow-color);
 }
 
 button {
