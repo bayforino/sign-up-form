@@ -19,9 +19,29 @@
       <img src="https://cataas.com/cat" alt="main image" class="main-image" />
     </div>
     <div class="main-content-container">
-      <div class="image-overlay-container"></div>
+      <div class="image-overlay-container">
+        <div class="image-overlay">
+          <img
+            src="sign-up-logo.svg"
+            alt="sign up logo"
+            id="sign-up-logo-image"
+            class="green-filter"
+          />
+          <h1>Sign-up <br />form</h1>
+        </div>
+      </div>
+
       <div class="main-right-container">
         <div class="top-info-container">
+          <div class="right-title">
+            <img
+              src="sign-up-logo.svg"
+              alt="sign up logo"
+              id="sign-up-logo-image-right"
+              class="green-filter"
+            />
+            <h1>Sign-up form</h1>
+          </div>
           <div class="top-info">
             <h3>
               This is not a real online service! You know you need something
@@ -40,17 +60,18 @@
             <form action="#" id="sign-up-form">
               <label for="first-name">
                 <p>First name</p>
-                <input type="text" name="first-name" id="first-name" />
+                <input type="text" name="first-name" id="first-name" required />
+                <p id="first-name-error-text"></p>
               </label>
 
               <label for="last-name">
-                <p>Email</p>
-                <input type="text" name="last-name" id="last-name" />
+                <p>Last name</p>
+                <input type="text" name="last-name" id="last-name" required />
               </label>
 
               <label for="email">
                 <p>Email</p>
-                <input type="email" name="email" id="email" />
+                <input type="email" name="email" id="email" required />
               </label>
 
               <label for="phone">
@@ -60,7 +81,7 @@
 
               <label for="password">
                 <p>Password</p>
-                <input type="password" name="password" id="password" />
+                <input type="password" name="password" id="password" required />
               </label>
 
               <label for="confirm-password">
@@ -69,6 +90,7 @@
                   type="confirm-password"
                   name="confirm-password"
                   id="confirm-password"
+                  required
                 />
               </label>
             </form>
@@ -82,5 +104,6 @@
         </div>
       </div>
     </div>
+    <script src="script.js"></script>
   </body>
 </html>
