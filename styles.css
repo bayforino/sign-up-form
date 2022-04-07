@@ -1,0 +1,15 @@
+:root{
+    --main-green: #546f44;
+    --main-red: #cb2327;
+    --main-black: #1f1e1e;
+    --main-light-gray: #f8fbfc;
+}
+
+/* 
+
+usage of custom properties:
+
+color: var(--custom-property);
+
+*/
+
